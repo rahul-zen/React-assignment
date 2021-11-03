@@ -23,7 +23,8 @@ export const updateUser = (id, userData) => {
 export const deleteUser = (id) => {
   return async (dispatch, getState) => {
     const list = getState();
-    console.log("inside");
+    console.log("inside", list.users.userList);
+    console.log("id", id);
     // eslint-disable-next-line array-callback-return
     const deletedList = list.users.userList.filter((item) => {
       if (item.id === id) {

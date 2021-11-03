@@ -41,8 +41,8 @@ export const DataTable = () => {
     modalAction();
   };
 
-  const onClickDelete = (id) => {
-    setId(id);
+  const onClickDelete = (value) => {
+    setId(value.id);
     confirmationModalAction();
   };
 
